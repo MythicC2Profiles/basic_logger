@@ -5,6 +5,10 @@ import "github.com/MythicMeta/MythicContainer/loggingstructs"
 func Initialize() {
 	myLoggerName := "my_logger"
 	myLogger := loggingstructs.LoggingDefinition{
+		LogToFilePath:  "mythic.log",
+		LogLevel:       "debug",
+		LogMaxSizeInMB: 20,
+		LogMaxBackups:  10,
 		NewCallbackFunction: func(input loggingstructs.NewCallbackLog) {
 			loggingstructs.AllLoggingData.Get(myLoggerName).LogInfo(input.Action, "data", input)
 		},
