@@ -2,8 +2,9 @@ module MyContainer
 
 go 1.19
 
+//replace github.com/MythicMeta/MythicContainer => ../../../../MythicMeta/MythicContainer
 require (
-	github.com/MythicMeta/MythicContainer v1.0.4
+	github.com/MythicMeta/MythicContainer v1.0.6
 	github.com/mitchellh/mapstructure v1.5.0
 )
 
