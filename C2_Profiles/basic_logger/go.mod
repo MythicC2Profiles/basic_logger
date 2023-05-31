@@ -4,8 +4,8 @@ go 1.19
 
 //replace github.com/MythicMeta/MythicContainer => ../../../../MythicMeta/MythicContainer
 require (
-	github.com/MythicMeta/MythicContainer v1.0.6
-	github.com/mitchellh/mapstructure v1.5.0
+	github.com/MythicMeta/MythicContainer v1.0.9-rc05
+	github.com/mitchellh/mapstructure v1.5.0 // indirect
 )
 
 require (
@@ -18,7 +18,6 @@ require (
 	github.com/magiconair/properties v1.8.7 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.17 // indirect
-	github.com/pelletier/go-toml v1.9.5 // indirect
 	github.com/pelletier/go-toml/v2 v2.0.7 // indirect
 	github.com/rabbitmq/amqp091-go v1.7.0 // indirect
 	github.com/rs/zerolog v1.29.0 // indirect
@@ -36,6 +35,5 @@ require (
 	google.golang.org/protobuf v1.28.1 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1 // indirect
-	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )

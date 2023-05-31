@@ -30,6 +30,9 @@ func Initialize() {
 		NewFileFunction: func(input loggingstructs.NewFileLog) {
 			loggingstructs.AllLoggingData.Get(myLoggerName).LogInfo(input.Action, "data", input.Data)
 		},
+		NewResponseFunction: func(input loggingstructs.NewResponseLog) {
+			loggingstructs.AllLoggingData.Get(myLoggerName).LogInfo(input.Action, "data", input.Data)
+		},
 	}
 	loggingstructs.AllLoggingData.Get(myLoggerName).AddLoggingDefinition(myLogger)
 }
