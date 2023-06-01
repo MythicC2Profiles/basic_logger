@@ -1,6 +1,8 @@
 package my_logger
 
-import "github.com/MythicMeta/MythicContainer/loggingstructs"
+import (
+	"github.com/MythicMeta/MythicContainer/loggingstructs"
+)
 
 func Initialize() {
 	myLoggerName := "my_logger"
