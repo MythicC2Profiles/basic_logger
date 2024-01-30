@@ -1,17 +1,18 @@
-FROM itsafeaturemythic/mythic_go_base:latest
+FROM ghcr.io/mythicc2profiles/basic_logger:v0.0.0
+#FROM golang:1.21 as builder
 
-WORKDIR /Mythic/
+#WORKDIR /Mythic/
 
-COPY [".", "."]
+#COPY [".", "."]
 
-RUN make build
+#RUN make build
 
-FROM alpine
+#FROM alpine
 
-RUN apk add --update make
+#RUN apk add --update make
 
-COPY --from=0 /main /main
+#COPY --from=0 /main /main
 
-WORKDIR /Mythic/
+#WORKDIR /Mythic/
 
-CMD make run
+#CMD make run
