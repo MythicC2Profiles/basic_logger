@@ -12,6 +12,8 @@ RUN apk add --update make
 
 COPY --from=builder /main /main
 
+COPY Makefile /Mythic/Makefile
+
 WORKDIR /Mythic/
 
 CMD make run
