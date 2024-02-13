@@ -14,4 +14,6 @@ COPY --from=builder /main /main
 
 WORKDIR /Mythic/
 
+COPY [".", "."]
+
 CMD make run
