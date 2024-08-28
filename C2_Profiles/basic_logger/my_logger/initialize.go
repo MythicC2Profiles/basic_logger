@@ -7,6 +7,8 @@ import (
 func Initialize() {
 	myLoggerName := "my_logger"
 	myLogger := loggingstructs.LoggingDefinition{
+		Name:        myLoggerName,
+		Description: "basic stdout debug logger",
 		//LogToFilePath:  "mythic.log",
 		LogLevel: "debug",
 		//LogMaxSizeInMB: 20,
