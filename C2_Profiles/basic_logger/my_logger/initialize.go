@@ -7,12 +7,12 @@ import (
 func Initialize() {
 	myLoggerName := "my_logger"
 	myLogger := loggingstructs.LoggingDefinition{
-		Name:        myLoggerName,
-		Description: "basic stdout debug logger",
-		//LogToFilePath:  "mythic.log",
-		LogLevel: "debug",
-		//LogMaxSizeInMB: 20,
-		//LogMaxBackups:  10,
+		Name:           myLoggerName,
+		Description:    "basic stdout debug logger",
+		LogToFilePath:  "mythic.log",
+		LogLevel:       "debug",
+		LogMaxSizeInMB: 20,
+		LogMaxBackups:  10,
 		NewCallbackFunction: func(input loggingstructs.NewCallbackLog) {
 			loggingstructs.AllLoggingData.Get(myLoggerName).LogInfo(input.Action, "data", input)
 		},

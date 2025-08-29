@@ -6,7 +6,7 @@ toolchain go1.23.3
 
 //replace github.com/MythicMeta/MythicContainer => ../../../../MythicMeta/MythicContainer
 require (
-	github.com/MythicMeta/MythicContainer v1.4.17
+	github.com/MythicMeta/MythicContainer v1.4.23
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 )
 
