@@ -1,6 +1,6 @@
 # basiclogger
 
-This is a basic logging container for Mythic v3.0.0. This conatiner connects up to RabbitMQ queues for logging and then can either log the messages to stdout or to files in JSON format.
+This is a basic logging container for Mythic v3.0.0. This container connects up to RabbitMQ queues for logging and then can either log the messages to stdout or to files in JSON format.
 
 ## How to install an agent in this format within Mythic
 
