@@ -5,6 +5,6 @@
   "exclude_documentation_c2": false,
   "exclude_agent_icons": false,
   "remote_images": {
-    "basic_logger": "ghcr.io/mythicc2profiles/basic_logger:v0.0.7"
+    "basic_logger": "ghcr.io/mythicc2profiles/basic_logger:v0.0.8"
   }
 }
